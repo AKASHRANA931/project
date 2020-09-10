@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ComCod.Com</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" type = "text/css" href ="Style.css">
+    </head>
+
+<body>
+      <div class="parent" >
+        <!-- Header Section  -->
+        
+           <div class = "header">
+           
+            <img class ="icon" src="img/favicon.ico">
+              <nav class = "navbar">
+                  <label class ="logo" >ComCod</label>
+                  <p>Education</p>
+                      <ul class="header_ul">
+                        <li>
+                          <a class="Home" href="#">Home </a>
+                        </li>
+                        <li>
+                          <a class="Course" href="#">Course</a>
+                        </li>
+                        <li><a class="Service" href="#">Service</a></li>
+                          <li>
+                            <a class="About" href="#">About</a>
+                          </li> 
+                      </ul>
+                  </nav>
+            </div>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/amazon.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/flipkart.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/microsoft.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/dxc.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8500);
+    // Change image every 2 seconds
+}
+</script>
+
+        <!-- main section -->
+        <div class="main">
+           <div class ="Heading">
+             <h3>Study</h3>
+             <h4>Material</h4>
+             <section class = "banner_area">
+               <div class="banner">
+                <a href="#"> <img src="img/study_mat.png" class="ban1"></a>
+                
+                <a href="#"> <img src="img/coding.png" class="ban1"></a>
+                <a href="#"> <img src="img/interview.png" class="ban1"></a>
+                <a href="#"> <img src="img/quantum.png" class="ban1"></a>
+                
+               </div>
+          </section>    
+           </div>
+
+           <!-- Material-->
+          
+
+        </div>
+        <div class  = "data1" id = "data1">
+            <a href="#"><img src="img/amazondata1.png" alt="Flowers"></a>
+            
+          </div>
+          <div class="data1Con">
+            <img src="img/data1cont.png">
+          </div>
+
+        <!-- Footer Section-->
+        <div class="footer-wrapper_links">
+          <ul class="footer-wrapper_links-list">
+              <li><h3>Company</h3></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="footer-wrapper_links-list">
+              <li><h3>Learn</h3></li>
+              <li><a href="#">Algorithms</a></li>
+              <li><a href="#">Data Structures</a></li>
+              <li><a href="#">Languages</a></li>
+              <li><a href="#">CS
+                      Subjects</a></li>
+              <li><a href="#">Video Tutorials</a></li>
+          </ul>
+          <ul class="footer-wrapper_links-list">
+              <li><h3>Practice</h3></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Company-wise</a></li>
+              <li><a href="#">Topic-wise</a></li>
+              <li><a href="#">How to begin?</a></li>
+          </ul>
+          <ul class="footer-wrapper_links-list">
+              <li><h3>Contribute</h3></li>
+              
+              <li><a href="#">Write an Article</a></li>
+              <li><a href="#">Write Interview
+                      Experience</a></li>
+              <li><a href="#">Internships</a></li>
+              <li><a href="#">Videos</a>
+              </li>
+          </ul>
+      </div>
+            
+    </body>
+
+</html>
